@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-/* Estilo do corpo */
 body {
     background: linear-gradient(to right, #000000, #333333);
     font-family: 'poppins', sans-serif;
@@ -16,7 +15,6 @@ body {
     overflow: hidden;
 }
 
-/* Estilo do header para centralizar o título no topo */
 header {
     text-align: center;
     padding: 20px;
@@ -30,7 +28,6 @@ header:hover {
     transition: 0.5s;
 }
 
-/* Estilo da seção central */
 .container {
     display: flex;
     flex-direction: column;
@@ -39,20 +36,14 @@ header:hover {
     flex: 1; /* Faz com que a seção ocupe o espaço restante */
 }
 
-/* Estilo do subtítulo */
-.subtitle {
-    margin-bottom: 20px; /* Espaçamento abaixo do subtítulo */
-    color: white;
-    font-size: 20px;
-}
-
-/* Estilo dos botões */
-.btns {
+.formulario {
     display: flex;
-    gap: 10px; /* Espaçamento entre os botões */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Faz com que a seção ocupe o espaço restante */
 }
 
-/* Estilo dos botões */
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -61,17 +52,16 @@ button {
     color: #fff;
     cursor: pointer;
     border-radius: 40px;
-    width: 250px;
+    width: 200px;
     height: 50px;
     font-weight: bold;
-    margin: 5px;
+    margin: 10px;
 }
 
 button a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    padding: 0 50px 0 50px;
 }
 
 /* Estilo do link dentro do botão */
@@ -79,4 +69,26 @@ button:hover {
     background-color: #0056b3;
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+input {
+    width: 350px;
+    height: 55px;
+    border-radius: 40px;
+    border: none;
+    font-size: 22px;
+    outline: none;
+    padding: 7px;
+    margin: 15px;
+}
+
+input:focus {
+    border: 1px solid #007BFF;
+}
+
+label {
+    color: #fff;
+    font-size: 27px;
+    font-family: 'poppins';
+    font-weight: bold;
 }
