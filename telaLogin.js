@@ -7,11 +7,6 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     const storedEmail = localStorage.getItem('userEmail')
     const storedPassword = localStorage.getItem('userPassword')
 
-    console.log('Email:', email);
-    console.log('Senha:', senha);
-    console.log('Stored Email:', storedEmail);
-    console.log('Stored Password:', storedPassword);
-
     if (email === '' || senha === '') {
         alert('Preencha os campos!')
         return

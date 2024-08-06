@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #000000, #333333);
+    font-family: 'poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.menu {
+    width: 60px;
+    height: 60px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+input {
+    width: 270px;
+    height: 30px;
+    margin-top: 40px;
+}
+
+h1 {
+    color: rgb(6, 178, 247);
+    margin-top: 25px;
+    font-size: 50px;
+    cursor: pointer;
+    margin-left: 120px;
+}
+
+.subtitulo {
+    color: white;
+    margin: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 15px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: white; /* Cor do fundo da trilha da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(6, 178, 247); /* Cor do "polegar" (parte deslizante) da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(6, 85, 175); /* Cor do polegar ao passar o mouse sobre ele */
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000; /* Para garantir que o menu esteja sobre outros conteúdos */
+}
+
+.side-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.side-menu a:hover {
+    color: #f1f1f1;
+}
+
+.side-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#main {
+    transition: margin-left .3s;
+    padding: 16px;
+}
