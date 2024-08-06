@@ -36,7 +36,7 @@ header:hover {
     flex: 1; /* Faz com que a seção ocupe o espaço restante */
 }
 
-.formulario {
+#formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
