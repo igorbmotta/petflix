@@ -33,7 +33,7 @@ header:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1; /* Faz com que a seção ocupe o espaço restante */
+    flex: 1; 
 }
 
 #formulario {
@@ -41,7 +41,7 @@ header:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1; /* Faz com que a seção ocupe o espaço restante */
+    flex: 1; 
 }
 
 button {
@@ -64,7 +64,6 @@ button a {
     font-size: 20px;
 }
 
-/* Estilo do link dentro do botão */
 button:hover {
     background-color: #0056b3;
     transform: scale(1.1);

@@ -55,19 +55,19 @@ h1 {
 }
 
 ::-webkit-scrollbar {
-    width: 15px; /* Largura da barra de rolagem */
+    width: 15px; 
 }
 
 ::-webkit-scrollbar-track {
-    background: white; /* Cor do fundo da trilha da barra de rolagem */
+    background: white; 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(6, 178, 247); /* Cor do "polegar" (parte deslizante) da barra de rolagem */
+    background: rgb(6, 178, 247); 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(6, 85, 175); /* Cor do polegar ao passar o mouse sobre ele */
+    background: rgb(6, 85, 175); 
 }
 
 .side-menu {
@@ -80,7 +80,7 @@ h1 {
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
-    z-index: 1000; /* Para garantir que o menu esteja sobre outros conteúdos */
+    z-index: 1000;
 }
 
 .side-menu .categorias {

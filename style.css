@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-/* Estilo do corpo */
 body {
     background: linear-gradient(to right, #000000, #333333);
     font-family: 'poppins', sans-serif;
@@ -16,7 +15,6 @@ body {
     overflow: hidden;
 }
 
-/* Estilo do header para centralizar o título no topo */
 header {
     text-align: center;
     padding: 20px;
@@ -30,29 +28,25 @@ header:hover {
     transition: 0.5s;
 }
 
-/* Estilo da seção central */
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1; /* Faz com que a seção ocupe o espaço restante */
+    flex: 1; 
 }
 
-/* Estilo do subtítulo */
 .subtitle {
-    margin-bottom: 20px; /* Espaçamento abaixo do subtítulo */
+    margin-bottom: 20px; 
     color: white;
     font-size: 20px;
 }
 
-/* Estilo dos botões */
 .btns {
     display: flex;
-    gap: 10px; /* Espaçamento entre os botões */
+    gap: 10px; 
 }
 
-/* Estilo dos botões */
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -74,7 +68,6 @@ button a {
     padding: 0 50px 0 50px;
 }
 
-/* Estilo do link dentro do botão */
 button:hover {
     background-color: #0056b3;
     transform: scale(1.1);
