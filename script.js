@@ -1,3 +1,18 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const loadingScreen = document.getElementById('loading-screen');
+    const mainContent = document.getElementById('main-content');
+    
+    setTimeout(function() {
+        loadingScreen.classList.add('fade-out');
+        
+        setTimeout(function() {
+            loadingScreen.style.display = 'none';
+            mainContent.style.display = 'block';
+        }, 2000);
+    }, 3000);
+});
+
+
 document.getElementById('formulario').addEventListener('submit', function(event) {
     event.preventDefault()
 

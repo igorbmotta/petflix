@@ -33,7 +33,8 @@ header:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1; 
+    height: 100%;
+    padding: 20px;
 }
 
 .subtitle {
@@ -72,4 +73,39 @@ button:hover {
     background-color: #0056b3;
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+#loading-screen {
+    background: linear-gradient(to right, #000000, #333333);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#logo h1 {
+    font-size: 4em;
+    color: rgb(6, 178, 247);
+    margin: 0;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+#loading-screen.fade-out {
+    animation: fadeOut 2s ease-in-out;
 }
